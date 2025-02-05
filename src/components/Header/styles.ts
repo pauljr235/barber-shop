@@ -11,8 +11,8 @@ export const Container = styled.div`
 export const LinksContainer = styled.ul`
   list-style: none;
   position: absolute;
-  top: 50px;
-  right: 0;
+  top: 70px;
+  right: 60px;
   background-color: black;
   width: 200px;
   padding: 10px;
@@ -40,7 +40,7 @@ export const LinksContainer = styled.ul`
 `
 export const HeaderButton = styled.button`
   cursor: pointer;
-  font-size: 30px;
+  font-size: 50px;
   background: transparent;
   color: ${cores.branco};
   border: none;
