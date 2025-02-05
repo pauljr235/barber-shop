@@ -12,6 +12,7 @@ export const Imagem = styled.div`
   img {
     width: 800px;
     height: 700px;
+    border-radius: 8px;
   }
 `
 
@@ -20,6 +21,7 @@ export const AboutText = styled.div`
     font-size: 40px;
     padding-bottom: 24px;
     text-align: center;
+    font-family: 'Pacific', cursive;
   }
 
   p {

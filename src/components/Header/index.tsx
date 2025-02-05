@@ -17,10 +17,13 @@ const Header = () => {
               <a href="#sobre">Sobre</a>
             </li>
             <li>
+              <a href="#serviços">Serviços</a>
+            </li>
+            <li>
               <a href="#reservas">Reservas</a>
             </li>
             <li>
-              <a href="#contatos">Contatos</a>
+              <a href="#contactos">Contactos</a>
             </li>
           </LinksContainer>
         </nav>
