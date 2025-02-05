@@ -42,6 +42,7 @@ const About = () => {
           doloremque ducimus cupiditate, quo repellendus sunt quam repellat
           facere quae. Ullam, deserunt?
         </p>
+
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque
           culpa, atque optio odit perspiciatis dicta autem voluptate corrupti

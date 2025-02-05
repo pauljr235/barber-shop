@@ -4,18 +4,18 @@ import { cores } from '../../styles'
 export const AboutContainer = styled.div`
   display: flex;
   color: ${cores.branco};
-  padding-top: 8px;
+  padding: 16px 16px;
+  align-items: center;
 `
 
 export const Imagem = styled.div`
   img {
     width: 800px;
+    height: 700px;
   }
 `
 
 export const AboutText = styled.div`
-  padding-top: 80px;
-
   h1 {
     font-size: 40px;
     padding-bottom: 24px;
@@ -24,6 +24,6 @@ export const AboutText = styled.div`
 
   p {
     line-height: 24px;
-    padding: 32px;
+    padding: 24px 50px;
   }
 `
