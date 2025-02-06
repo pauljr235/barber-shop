@@ -1,5 +1,6 @@
 import About from './components/About'
 import Banner from './components/Banner'
+import Contatos from './components/Contatos'
 import Header from './components/Header'
 import Servicos from './components/Serviços'
 
@@ -13,6 +14,7 @@ function App() {
       <Banner />
       <About />
       <Servicos />
+      <Contatos />
     </>
   )
 }

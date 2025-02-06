@@ -11,13 +11,12 @@ export const Container = styled.div`
 export const LinksContainer = styled.ul`
   list-style: none;
   position: absolute;
-  top: 90px;
-  right: 60px;
+  top: 50px;
+  right: 90px;
   background-color: black;
   width: 200px;
   padding: 10px;
   border-radius: 8px;
-  transition: transform 0.3s ease-in-out;
   display: flex;
   flex-direction: column;
   align-items: center;

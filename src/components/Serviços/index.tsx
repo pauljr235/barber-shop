@@ -8,34 +8,67 @@ import {
 } from './styles'
 
 const Servicos = () => (
-  <Container>
+  <Container id="serviços">
     <div className="container">
-      <Titulo>Nossos Serviços</Titulo>
+      <Titulo>NOSSOS SERVIÇOS</Titulo>
       <ServicosLista>
         {[
-          { nome: 'Cortes', preco: '28.5', tempo: '40 min' },
-          { nome: 'Retoque', preco: '28.5', tempo: '40 min' },
-          { nome: 'Corte Clássico', preco: '28.5', tempo: '40 min' },
-          { nome: 'Ritual Barba', preco: '28.5', tempo: '40 min' },
-          { nome: 'Barba Aparada', preco: '28.5', tempo: '40 min' },
-          { nome: 'Criança -10', preco: '28.5', tempo: '40 min' }
+          {
+            nome: 'Cortes',
+            preco: '28.5',
+            tempo: '40 min',
+            descricao:
+              'Com diversas técnicas de corte, requer habilidade e sensibilidade'
+          },
+          {
+            nome: 'Retoque',
+            preco: '28.5',
+            tempo: '40 min',
+            descricao:
+              'Com diversas técnicas de corte, requer habilidade e sensibilidade'
+          },
+          {
+            nome: 'Corte Clássico',
+            preco: '28.5',
+            tempo: '40 min',
+            descricao:
+              'Com diversas técnicas de corte, requer habilidade e sensibilidade'
+          },
+          {
+            nome: 'Ritual Barba',
+            preco: '28.5',
+            tempo: '40 min',
+            descricao:
+              'Com diversas técnicas de corte, requer habilidade e sensibilidade'
+          },
+          {
+            nome: 'Barba Aparada',
+            preco: '28.5',
+            tempo: '40 min',
+            descricao:
+              'Com diversas técnicas de corte, requer habilidade e sensibilidade'
+          },
+          {
+            nome: 'Criança -10',
+            preco: '28.5',
+            tempo: '40 min',
+            descricao:
+              'Com diversas técnicas de corte, requer habilidade e sensibilidade'
+          }
         ].map((servico, index) => (
           <ServicoItem key={index}>
             <div className="header">
               <h3>{servico.nome}</h3>
               <PrecoTempo>
                 <span>
-                  <i className="bi bi-calendar2-heart"></i> {servico.preco}
+                  <i className="bi bi-currency-euro"></i> {servico.preco}
                 </span>
                 <span>
                   <i className="bi bi-clock"></i> {servico.tempo}
                 </span>
               </PrecoTempo>
             </div>
-            <Descricao>
-              Com diversas técnicas de corte, requer habilidade e sensibilidade
-              de quem o executa. Para homens contemporâneos.
-            </Descricao>
+            <Descricao>{servico.descricao}</Descricao>
           </ServicoItem>
         ))}
       </ServicosLista>

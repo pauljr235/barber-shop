@@ -29,17 +29,24 @@ export const Logo = styled.div`
 
 export const Button = styled.button`
   position: absolute;
-  top: 550px;
-  left: 700px;
+  top: 650px;
+  left: 100px;
   padding: 18px 30px;
   font-weight: bold;
   font-size: 18px;
   cursor: pointer;
+  border-radius: 4px;
   background: ${cores.preto};
   color: ${cores.branco};
   border: none;
+  transition: 0.5s ease-in-out;
+  font-weight: 400;
+  background: cinza;
+  border: 1px solid;
+
   &:hover {
     background: ${cores.branco};
     color: ${cores.preto};
+    padding: 18px 50px;
   }
 `

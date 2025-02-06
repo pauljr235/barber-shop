@@ -36,9 +36,9 @@ export const Descricao = styled.p`
 export const Titulo = styled.h1`
   text-align: center;
   padding-top: 80px;
-  padding-bottom: 40px;
+  padding-bottom: 80px;
   font-size: 48px;
-  font-family: 'Pacific', cursive;
+  font-family: 'playfair', cursive;
 `
 
 export const PrecoTempo = styled.div`
