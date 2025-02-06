@@ -45,7 +45,7 @@ export const Button = styled.button`
   border: 1px solid;
 
   &:hover {
-    background: ${cores.branco};
+    background: #f5a623;
     color: ${cores.preto};
     padding: 18px 50px;
   }

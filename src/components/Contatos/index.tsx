@@ -31,11 +31,11 @@ const Contatos = () => (
           2055-470 Almada
         </p>
         <i className="bi bi-envelope">
-          <a href="https://outlook.com"> info@anossabarbearia.pt</a>
+          <a href="https://outlook.com"> info@barbeariadopacoka.pt</a>
         </i>
         <i className="bi bi-phone">
           <a href="https://outlook.com">
-            249 158 307 (Custo de uma <br /> chamada da rede fixa ou rede móvel{' '}
+            299 777 963 (Custo de uma <br /> chamada da rede fixa ou rede móvel{' '}
             <br />
             nacional, de acordo com o <br /> artigo 3º do Decreto-Lei n.º <br />{' '}
             59/2021, de 14 de julho)

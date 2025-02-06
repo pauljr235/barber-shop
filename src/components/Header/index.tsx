@@ -6,7 +6,9 @@ const Header = () => {
 
   return (
     <Container>
-      <HeaderButton onClick={() => setMenuOpen(!menuOpen)}>☰</HeaderButton>
+      <HeaderButton onClick={() => setMenuOpen(!menuOpen)}>
+        {menuOpen ? '✖' : '☰'}
+      </HeaderButton>
       {menuOpen && (
         <nav>
           <LinksContainer>

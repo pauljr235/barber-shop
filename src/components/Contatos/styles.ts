@@ -11,7 +11,7 @@ export const ContatosContainer = styled.div`
   padding: 40px;
   position: relative;
 
-  /* Adicionando uma sobreposição escura para melhorar a legibilidade */
+  /* sobreposição escura */
   &::before {
     content: '';
     position: absolute;

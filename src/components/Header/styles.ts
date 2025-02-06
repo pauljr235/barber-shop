@@ -13,17 +13,21 @@ export const LinksContainer = styled.ul`
   position: absolute;
   top: 50px;
   right: 90px;
-  background-color: black;
-  width: 200px;
-  padding: 10px;
-  border-radius: 8px;
+  background-color: rgba(0, 0, 0, 0.9);
+  width: 250px;
+  height: 40vh;
+  background: rgba(0, 0, 0, 0.9);
+  padding: 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 10px;
+  gap: 20px;
+  border-radius: 8px;
+  backdrop-filter: blur(5px);
+  transition: right 0.3s ease-in-out;
 
   a {
-    color: white;
+    color: ${cores.branco};
     text-decoration: none;
     padding: 10px;
     display: block;
@@ -39,10 +43,14 @@ export const LinksContainer = styled.ul`
 `
 export const HeaderButton = styled.button`
   cursor: pointer;
-  font-size: 50px;
+  font-size: 40px;
   background: transparent;
   color: ${cores.branco};
   border: none;
-  padding-right: 30px;
-  padding-top: 20px;
+  padding: 10px;
+  transition: transform 0.3s ease-in-out;
+
+  &:hover {
+    transform: scale(1.1);
+  }
 `
