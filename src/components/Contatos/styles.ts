@@ -2,11 +2,37 @@ import styled from 'styled-components'
 import { cores } from '../../styles'
 
 export const ContatosContainer = styled.div`
-  height: 400px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 500px;
   background-size: cover;
   background-position: center;
-  padding-left: 80px;
-  padding-top: 30px;
+  padding: 40px;
+  position: relative;
+
+  /* Adicionando uma sobreposição escura para melhorar a legibilidade */
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Escurecendo a imagem de fundo */
+    z-index: 1;
+  }
+
+  > div {
+    position: relative;
+    z-index: 2;
+  }
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    height: auto;
+    text-align: center;
+  }
 `
 
 export const Inputs = styled.div`
@@ -17,10 +43,16 @@ export const Inputs = styled.div`
     background-color: transparent;
     border: none;
     border-bottom: 1px solid #e1e1e1;
-    margin-right: 8px;
+    margin-right: 16px;
     padding: 8px;
     font-size: 16px;
     color: ${cores.preto};
+
+    &:focus {
+      border-color: #f5a623;
+      outline: none;
+      box-shadow: 0 0 5px rgba(255, 165, 0, 0.5);
+    }
 
     &::placeholder {
       color: ${cores.branco};
@@ -35,47 +67,88 @@ export const Inputs = styled.div`
 `
 
 export const ContatosText = styled.div`
-  padding-left: 30px;
+  width: 100%;
+  max-width: 400px;
+
   textarea {
+    width: 100%;
+    height: 120px;
     background-color: transparent;
-    border: none;
-    border-bottom: 1px solid white;
-    margin-right: 8px;
-    padding: 8px;
-    resize: none;
+    border: 2px solid white;
+    padding: 12px;
+    margin-left: 30px;
     font-size: 16px;
-    color: ${cores.branco};
-    &::placeholder {
-      color: ${cores.branco};
-      opacity: 1;
+    border-radius: 5px;
+    resize: none;
+    color: white;
+    transition: 0.3s ease-in-out;
+
+    &:focus {
+      border-color: #f5a623;
+      outline: none;
+      box-shadow: 0 0 5px rgba(255, 165, 0, 0.5);
     }
 
-    &:hover {
-      transform: scale(1.15);
-      transition: 0.3s;
+    &::placeholder {
+      color: white;
+      opacity: 0.8;
     }
   }
 `
 
-export const ContatosInfo = styled.div`
-  padding: 50px 100px;
-  color: ${cores.branco};
-`
-
 export const Botao = styled.button`
-  padding: 16px 20px;
+  padding: 12px 20px;
+  margin-top: 20px;
   margin-left: 30px;
-  margin-top: 16px;
-  cursor: pointer;
-  background-color: transparent;
+  background-color: #f5a623;
+  color: black;
+  border: none;
+  border-radius: 5px;
   font-size: 16px;
-  border-color: ${cores.branco};
-  color: ${cores.branco};
-
-  transition: transform 0.3s ease-in-out;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
 
   &:hover {
-    transform: translateY(-5px);
-    background: ${cores.preto};
+    background-color: #d48f1a;
+  }
+`
+
+export const ContatosInfo = styled.div`
+  color: white;
+  padding: 40px;
+  max-width: 350px;
+
+  h4 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #f5a623;
+  }
+
+  p {
+    font-size: 16px;
+    margin-bottom: 15px;
+  }
+
+  i {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 18px;
+    margin-top: 15px;
+
+    a {
+      color: white;
+      text-decoration: none;
+      transition: color 0.3s ease-in-out;
+
+      &:hover {
+        color: #f5a623;
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+    text-align: center;
+    padding: 20px;
   }
 `

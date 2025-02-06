@@ -30,6 +30,20 @@ const Contatos = () => (
           Nº105, Costa da Caparica <br />
           2055-470 Almada
         </p>
+        <i className="bi bi-envelope">
+          <a href="https://outlook.com"> info@anossabarbearia.pt</a>
+        </i>
+        <i className="bi bi-phone">
+          <a href="https://outlook.com">
+            249 158 307 (Custo de uma <br /> chamada da rede fixa ou rede móvel{' '}
+            <br />
+            nacional, de acordo com o <br /> artigo 3º do Decreto-Lei n.º <br />{' '}
+            59/2021, de 14 de julho)
+          </a>
+        </i>
+        <i className="bi bi-geo-alt">
+          <a href="https://outlook.com"> LOCALIZAÇÃO</a>
+        </i>
       </ContatosInfo>
     </ContatosContainer>
   </div>
