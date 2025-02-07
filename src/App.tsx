@@ -10,6 +10,7 @@ import 'slick-carousel/slick/slick-theme.css'
 import Servicos from './components/Serviços'
 
 import { GlobalCss } from './styles'
+import Footer from './components/Footer'
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
       <Servicos />
       <Reservas />
       <Contatos />
+      <Footer />
     </>
   )
 }

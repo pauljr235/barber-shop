@@ -20,7 +20,7 @@ const About = () => {
   }, [])
 
   return (
-    <AboutContainer id="sobre">
+    <AboutContainer className="container" id="sobre">
       <Imagem>
         <img src={images[currentIndex]} alt="" />
       </Imagem>

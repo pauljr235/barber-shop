@@ -6,6 +6,7 @@ export const Container = styled.div`
   top: 0;
   right: 0;
   padding: 10px;
+  z-index: 9999; /* Garante que o cabeçalho fique acima de outros conteúdos */
 
   @media (max-width: 768px) {
     top: 0px;
@@ -27,7 +28,6 @@ export const LinksContainer = styled.ul`
   background-color: rgba(0, 0, 0, 0.9);
   width: 250px;
   height: 40vh;
-  background: rgba(0, 0, 0, 0.9);
   padding: 20px;
   display: flex;
   flex-direction: column;
@@ -36,6 +36,7 @@ export const LinksContainer = styled.ul`
   border-radius: 8px;
   backdrop-filter: blur(5px);
   transition: right 0.3s ease-in-out;
+  z-index: 9999; /* Garante que os links fiquem acima de outras seções */
 
   @media (max-width: 768px) {
     top: 50px;
@@ -54,8 +55,8 @@ export const LinksContainer = styled.ul`
     transition: background 0.3s;
 
     &:hover {
-  background-color: rgba(255, 255, 255, 0.2);
-
+      background-color: rgba(255, 255, 255, 0.2);
+    }
   }
 `
 export const HeaderButton = styled.button`
