@@ -32,6 +32,7 @@ export const ContatosContainer = styled.div`
     flex-direction: column;
     height: auto;
     text-align: center;
+    padding-top: 0;
   }
 `
 
@@ -47,6 +48,15 @@ export const Inputs = styled.div`
     padding: 8px;
     font-size: 16px;
     color: ${cores.preto};
+
+    @media (max-width: 768px) {
+      margin: 0;
+    }
+
+    @media (min-width: 768px) and (max-width: 1024px) {
+      margin-left: 0;
+      margin-right: 30px;
+    }
 
     &:focus {
       border-color: #f5a623;
@@ -83,6 +93,15 @@ export const ContatosText = styled.div`
     color: white;
     transition: 0.3s ease-in-out;
 
+    @media (max-width: 768px) {
+      margin: 0;
+    }
+
+    @media (min-width: 768px) and (max-width: 1024px) {
+      background-color: black;
+      margin-left: 140px;
+    }
+
     &:focus {
       border-color: #f5a623;
       outline: none;
@@ -107,6 +126,9 @@ export const Botao = styled.button`
   font-size: 16px;
   cursor: pointer;
   transition: 0.3s ease-in-out;
+  @media (max-width: 768px) {
+    margin-left: 0;
+  }
 
   &:hover {
     background-color: #d48f1a;
@@ -149,6 +171,7 @@ export const ContatosInfo = styled.div`
 
   @media (max-width: 768px) {
     text-align: center;
-    padding: 20px;
+    padding: 0;
+    margin-top: 16px;
   }
 `

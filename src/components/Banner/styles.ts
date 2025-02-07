@@ -29,8 +29,8 @@ export const Logo = styled.div`
 
 export const Button = styled.button`
   position: absolute;
-  top: 650px;
-  left: 100px;
+  top: 600px;
+  left: 700px;
   padding: 18px 30px;
   font-weight: bold;
   font-size: 18px;
@@ -48,5 +48,24 @@ export const Button = styled.button`
     background: #f5a623;
     color: ${cores.preto};
     padding: 18px 50px;
+  }
+
+  @media (max-width: 768px) {
+    left: 125px;
+    top: 550px;
+    background: #f5a623;
+    color: ${cores.preto};
+  }
+
+  @media (min-width: 768px) and (max-width: 1024px) {
+    font-size: 24px;
+    left: 300px;
+    top: 700px;
+
+    &:hover {
+      background: ${cores.preto};
+      color: ${cores.branco};
+      padding: 18px 50px;
+    }
   }
 `

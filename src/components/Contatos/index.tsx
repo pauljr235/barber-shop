@@ -8,7 +8,7 @@ import {
 } from './styles'
 
 const Contatos = () => (
-  <div>
+  <div id="contactos">
     <ContatosContainer
       style={{ display: 'flex', backgroundImage: `url(${tesoura})` }}
     >

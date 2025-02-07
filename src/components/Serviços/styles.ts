@@ -14,6 +14,18 @@ export const ServicosLista = styled.ul`
   column-gap: 40px;
   row-gap: 24px;
   padding-left: 80px;
+
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr;
+    padding: 10px;
+    row-gap: 16px;
+  }
+
+  @media (min-width: 768px) and (max-width: 1024px) {
+  grid-template-columns: 1fr 1fr;
+    }
+
+  }
   h3 {
     padding-bottom: 16px;
     font-size: 20px;
@@ -21,6 +33,11 @@ export const ServicosLista = styled.ul`
 
   li {
     width: 500px;
+    @media (max-width: 768px) {
+      grid-template-columns: 1fr;
+      row-gap: 16px;
+      width: 350px;
+    }
 
     i {
       margin-left: 16px;
