@@ -54,8 +54,8 @@ export const LinksContainer = styled.ul`
     transition: background 0.3s;
 
     &:hover {
-      background: rgba(255, 255, 255, 0.2);
-    }
+  background-color: rgba(255, 255, 255, 0.2);
+
   }
 `
 export const HeaderButton = styled.button`

@@ -3,7 +3,8 @@ import { cores } from '../../styles'
 
 export const Container = styled.div`
   background-color: ${cores.branco};
-  padding-bottom: 80px;
+  padding-bottom: 200px;
+  padding-top: 150px;
 `
 
 export const ServicosLista = styled.ul`
@@ -77,6 +78,7 @@ export const PrecoTempo = styled.div`
 `
 export const ServicoItem = styled.li`
   border-radius: 8px;
+  list-style: none;
   padding: 20px;
   width: 100%;
   max-width: 500px;

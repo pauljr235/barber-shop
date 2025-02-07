@@ -8,7 +8,9 @@ const Banner = () => (
       <a href="#"></a>
     </Logo>
     <Titulo></Titulo>
-    <Button type="button">RESERVAS</Button>
+    <a href="#reservas">
+      <Button type="button">FAÇA SUA RESERVA</Button>
+    </a>
   </Imagem>
 )
 

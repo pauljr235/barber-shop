@@ -30,7 +30,7 @@ export const Logo = styled.div`
 export const Button = styled.button`
   position: absolute;
   top: 600px;
-  left: 700px;
+  left: 630px;
   padding: 18px 30px;
   font-weight: bold;
   font-size: 18px;
@@ -50,8 +50,15 @@ export const Button = styled.button`
     padding: 18px 50px;
   }
 
-  @media (max-width: 768px) {
+  @media (max-width: 500px) {
     left: 125px;
+    top: 0;
+    background: black;
+    color: ${cores.preto};
+  }
+
+  @media (max-width: 768px) {
+    left: 90px;
     top: 550px;
     background: #f5a623;
     color: ${cores.preto};
