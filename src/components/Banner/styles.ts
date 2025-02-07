@@ -7,20 +7,26 @@ export const Imagem = styled.div`
   background-repeat: no-repeat;
   background-size: cover;
   font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center; // Centraliza os itens verticalmente
+  position: relative; // Necessário para o posicionamento do botão
 `
+
 export const Titulo = styled.h1`
   font-family: 'Pacific', cursive;
   font-weight: 500;
   font-size: 40px;
-  position: absolute;
-  top: 400px;
-  left: 550px;
   color: white;
+  position: absolute;
+  top: 20%; // Ajusta a posição do título
+  text-align: center; // Garante que o título ficará centralizado horizontalmente
 `
+
 export const Logo = styled.div`
   position: absolute;
-  top: 250px;
-  left: 730px;
+  top: 10%; // Ajusta a posição da logo
+  text-align: center; // Garante centralização da logo
   img {
     border-radius: 24px;
     width: 150px;
@@ -29,8 +35,9 @@ export const Logo = styled.div`
 
 export const Button = styled.button`
   position: absolute;
-  top: 600px;
-  left: 630px;
+  top: 80%; // Centraliza o botão verticalmente
+  left: 50%; // Centraliza o botão horizontalmente
+  transform: translate(-50%, -50%); // Ajusta o centro real do botão
   padding: 18px 30px;
   font-weight: bold;
   font-size: 18px;
@@ -51,28 +58,18 @@ export const Button = styled.button`
   }
 
   @media (max-width: 500px) {
-    left: 125px;
-    top: 0;
+    font-size: 16px;
     background: black;
     color: ${cores.preto};
   }
 
   @media (max-width: 768px) {
-    left: 90px;
-    top: 550px;
+    font-size: 18px;
     background: #f5a623;
     color: ${cores.preto};
   }
 
   @media (min-width: 768px) and (max-width: 1024px) {
     font-size: 24px;
-    left: 300px;
-    top: 700px;
-
-    &:hover {
-      background: ${cores.preto};
-      color: ${cores.branco};
-      padding: 18px 50px;
-    }
   }
 `
