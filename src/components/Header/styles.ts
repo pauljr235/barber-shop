@@ -3,31 +3,29 @@ import { cores } from '../../styles'
 
 export const Container = styled.div`
   position: fixed;
-  top: 0;
-  right: 0;
+  top: 10px;
+  right: 20px;
   padding: 10px;
-  z-index: 9999; /* Garante que o cabeçalho fique acima de outros conteúdos */
+  z-index: 9999;
 
   @media (max-width: 768px) {
-    top: 0px;
-    left: 320px;
-    padding: 0;
-  }
-
-  @media (min-width: 768px) and (max-width: 1024px) {
-    top: 30px;
-    left: 650px;
+    top: 10px;
+    right: 10px;
+    left: auto;
+    padding: 5px;
   }
 `
 
 export const LinksContainer = styled.ul`
   list-style: none;
   position: absolute;
-  top: 50px;
-  right: 90px;
+  top: 60px;
+  right: 20px;
   background-color: rgba(0, 0, 0, 0.9);
   width: 250px;
-  height: 40vh;
+  max-width: 90vw;
+  height: auto;
+  min-height: 40vh;
   padding: 20px;
   display: flex;
   flex-direction: column;
@@ -36,12 +34,20 @@ export const LinksContainer = styled.ul`
   border-radius: 8px;
   backdrop-filter: blur(5px);
   transition: right 0.3s ease-in-out;
-  z-index: 9999; /* Garante que os links fiquem acima de outras seções */
+  z-index: 9999;
 
   @media (max-width: 768px) {
     top: 50px;
-    right: 60px;
+    right: 10px;
+    width: 200px;
     height: 50vh;
+  }
+
+  @media (min-width: 768px) and (max-width: 1024px) {
+    top: 60px;
+    right: 30px;
+    width: 220px;
+    height: 45vh;
   }
 
   a {
@@ -59,6 +65,7 @@ export const LinksContainer = styled.ul`
     }
   }
 `
+
 export const HeaderButton = styled.button`
   cursor: pointer;
   font-size: 32px;
@@ -71,13 +78,20 @@ export const HeaderButton = styled.button`
   &:hover {
     transform: scale(1.1);
   }
+
+  @media (max-width: 480px) {
+    font-size: 24px;
+    padding: 8px;
+  }
+
   @media (max-width: 768px) {
     background-color: black;
-    margin-top: 30px;
+    margin-top: 20px;
+    font-size: 28px;
   }
 
   @media (min-width: 768px) and (max-width: 1024px) {
     background-color: black;
-    font-size: 50px;
+    font-size: 40px;
   }
 `

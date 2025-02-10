@@ -94,7 +94,7 @@ export const ContatosText = styled.div`
     transition: 0.3s ease-in-out;
 
     @media (max-width: 768px) {
-      margin: 0;
+      margin-left: 30px;
     }
 
     @media (min-width: 768px) and (max-width: 1024px) {
@@ -174,4 +174,11 @@ export const ContatosInfo = styled.div`
     padding: 0;
     margin-top: 16px;
   }
+`
+
+export const Titulo = styled.h1`
+  font-family: 'playfair', cursive;
+  color: #f5a623;
+  font-size: 48px;
+  text-align: center;
 `

@@ -4,7 +4,8 @@ import {
   ContatosContainer,
   ContatosInfo,
   ContatosText,
-  Inputs
+  Inputs,
+  Titulo
 } from './styles'
 
 const Contatos = () => (
@@ -13,6 +14,7 @@ const Contatos = () => (
       style={{ display: 'flex', backgroundImage: `url(${tesoura})` }}
     >
       <div>
+        <Titulo>DÚVIDAS</Titulo>
         <Inputs>
           <input type="text" placeholder="Nome*" />
           <input type="text" placeholder="E-mail*" />

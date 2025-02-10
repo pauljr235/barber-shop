@@ -3,51 +3,61 @@ import { cores } from '../../styles'
 
 export const AboutContainer = styled.div`
   display: flex;
+  flex-direction: row;
   color: ${cores.branco};
-  padding: 16px 16px;
+  padding: 80px 5%;
   align-items: center;
+  justify-content: center;
+  gap: 50px;
 
-  @media (max-width: 768px) {
-    display: block;
+  @media (max-width: 1024px) {
+    flex-direction: column;
+    text-align: center;
+    gap: 30px;
+    padding: 60px 5%;
   }
 `
 
 export const Imagem = styled.div`
+  display: flex;
+  justify-content: center;
+
   img {
-    width: 600px;
-    height: 600px;
+    width: 100%;
+    max-width: 600px;
+    height: auto;
     border-radius: 8px;
 
     @media (max-width: 768px) {
-      width: 350px;
-      height: 350px;
+      max-width: 350px;
     }
 
     @media (min-width: 768px) and (max-width: 1024px) {
-      width: 730px;
-      height: 550px;
+      max-width: 500px;
     }
   }
 `
 
 export const AboutText = styled.div`
+  max-width: 600px;
+
   h1 {
     font-size: 48px;
     padding-bottom: 24px;
-    padding-left: 50px;
-    font-family: 'playfair', cursive;
+    font-family: 'Playfair Display', serif;
     display: flex;
     align-items: center;
+    justify-content: center;
+    position: relative;
 
     @media (max-width: 768px) {
-      padding-top: 16px;
-      padding-bottom: 0;
-      text-align: center;
-      padding-left: 0;
+      font-size: 36px;
+      padding-bottom: 16px;
     }
+
     @media (min-width: 768px) and (max-width: 1024px) {
-      padding-top: 40px;
-      font-size: 56px;
+      font-size: 42px;
+      padding-top: 20px;
     }
 
     &::after {
@@ -55,25 +65,22 @@ export const AboutText = styled.div`
       flex-grow: 1;
       height: 1px;
       background-color: white;
+      margin-left: 15px;
     }
   }
 
   p {
-    line-height: 24px;
-    padding: 24px 50px;
-    font-weight: 200;
+    line-height: 1.6;
+    font-weight: 300;
     font-size: 18px;
+    padding: 0 20px;
 
     @media (max-width: 768px) {
-      padding-top: 16px;
-      padding-bottom: 0;
-      text-align: center;
+      font-size: 16px;
     }
 
     @media (min-width: 768px) and (max-width: 1024px) {
-      font-size: 24px;
-      line-height: 24px;
-      padding: 40px;
+      font-size: 20px;
     }
   }
 `
